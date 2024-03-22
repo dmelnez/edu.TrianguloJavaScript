@@ -2,27 +2,46 @@
  * 
  */
 
+function estrellas(){
  
- function estrellas(){
  
- let numeroFilas = prompt("INTRODUZA EL NUMERO DE FILAS: ");
  
 	
 	let array = []
+	let auxiliar = false;
 	
-	
-	for(let i = 0; i < numeroFilas ; i++){
-					
-		array.push("*");
+	do{
+		let numeroFilas = prompt("INTRODUZA EL NUMERO DE FILAS: ");
 		
-		for(let j = 0; j < array.length; j++){
+		if(numeroFilas > 0){
+	
+		for(let i = 0; i < numeroFilas ; i++){
+						
+			array.push("*");
 			
-			console.log(array.toString());
+			for(let j = 0; j < array.length; j++){
+				
+				console.log(array.toString());
+				
+				}
+			
+			}
+			
+			
+			auxiliar = true;
 			
 		}
 		
+		else{}
+			
+
+		
+	
 	}
+	
+	while(!auxiliar);
 	
 	
 }
+
 
